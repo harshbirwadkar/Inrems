@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InReMS</title>
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="add-details-page.css">
+    <link rel="stylesheet" href="footer.css">
+    <!-- <link href='https://unpkg.com/css.gg@2.0.0/icons/css/log-in.css' rel='stylesheet'> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <div id="app">
+        <div id="centercontent">
+            <div class="header">
+                <h1 class="headtitle1">InReMS</h1>
+                <nav>
+                    <ul>
+                        <li><a class="button1" href="#">Home</a></li>
+                        <li><a class="button1" href="#">About</a></li>
+                        <li><a class="button1" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <span>
+                    <i class="gg-log-in"></i>
+                </span>
+            </div>
+
+            <div class="add-details-ting">
+                <div class="add-details-teacher">
+                    <div class="uni-headtitle add-details-container-headtitle">
+                        Add Teachers Details :
+                    </div>
+                    <div id="add-details-teacher-container" class="add-details-container">
+
+                        <div class="textInputWrapper">
+                            <input placeholder="Name" type="text" class="textInput">
+                        </div>
+                        <div class="textInputWrapper">
+                            <input placeholder="Id" type="text" class="textInput">
+                        </div>
+                        <div class="textInputWrapper">
+                            <input placeholder="Password" type="text" class="textInput">
+                        </div>
+                        <div class="textInputWrapper dropdown">
+                            <input placeholder="Branch" type="text" class="textInput"
+                                id="inputbox-dropdown-branch-teacher-add-detailspage" readonly>
+                            <div class="dropdown-content" id="dropdown-content-branch-teacher-add-detailspage">
+                                <ul>
+                                    <li><a href="#" class="dropdown-branch-teacher-add-detailspage"
+                                            data-branch="IT">IT</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-branch-teacher-add-detailspage"
+                                            data-branch="Comps">Comp</a></li>
+                                    <li><a href="#" class="dropdown-branch-teacher-add-detailspage"
+                                            data-branch="Mech">Mech</a></li>
+                                    <li><a href="#" class="dropdown-branch-teacher-add-detailspage"
+                                            data-branch="Extc">ExTC</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button id="add-details-teacher-container-button" class="button2 add-details-container-button">
+                            <span>Register</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="add-details-student">
+                    <div class="uni-headtitle add-details-container-headtitle">
+                        Add Student Details :
+                    </div>
+                    <div id="add-details-teacher-container" class="add-details-container">
+
+                        <div class="textInputWrapper">
+                            <input placeholder="Name" type="text" class="textInput">
+                        </div>
+                        <div class="textInputWrapper">
+                            <input placeholder="PRN" type="text" class="textInput">
+                        </div>
+                        <div class="textInputWrapper">
+                            <input placeholder="Date of birth" type="text" class="textInput">
+                        </div>
+                        <div class="textInputWrapper dropdown">
+                            <input placeholder="Branch" type="text" class="textInput"
+                                id="inputbox-dropdown-branch-student-add-detailspage" readonly>
+                            <div class="dropdown-content" id="dropdown-content-branch-student-add-detailspage">
+                                <ul>
+                                    <li><a href="#" class="dropdown-branch-student-add-detailspage"
+                                            data-branch="IT">IT</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-branch-student-add-detailspage"
+                                            data-branch="Comps">Comp</a></li>
+                                    <li><a href="#" class="dropdown-branch-student-add-detailspage"
+                                            data-branch="Mech">Mech</a></li>
+                                    <li><a href="#" class="dropdown-branch-student-add-detailspage"
+                                            data-branch="Extc">ExTC</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="textInputWrapper dropdown">
+                            <input placeholder="Semester" type="text" class="textInput"
+                                id="inputbox-dropdown-semester-student-add-detailspage" readonly>
+                            <div class="dropdown-content" id="dropdown-content-semester-student-add-detailspage">
+                                <ul>
+                                    <li><a href="#" class="dropdown-semester-student-add-detailspage"
+                                            data-semester="Semester 1">Semester 1</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-semester-student-add-detailspage"
+                                            data-semester="Semester 2">Semester 2</a></li>
+                                    <li><a href="#" class="dropdown-semester-student-add-detailspage"
+                                            data-semester="Semester 3">Semester 3</a></li>
+                                    <li><a href="#" class="dropdown-semester-student-add-detailspage"
+                                            data-semester="Semester 4">Semester 4</a></li>
+                                    <li><a href="#" class="dropdown-semester-student-add-detailspage"
+                                            data-semester="Semester 5">Semester 5</a></li>
+                                    <li><a href="#" class="dropdown-semester-student-add-detailspage"
+                                            data-semester="Semester 6">Semester 6</a></li>
+                                    <li><a href="#" class="dropdown-semester-student-add-detailspage"
+                                            data-semester="Semester 7">Semester 7</a></li>
+                                    <li><a href="#" class="dropdown-semester-student-add-detailspage"
+                                            data-semester="Semester 8">Semester 8</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button id="add-details-student-container-button" class="button2 add-details-container-button">
+                            <span>Register</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+           
+
+
+
+        </div>
+    </div>
+    <script src="add-details-page.js"></script>
+</body>
+
+</html>

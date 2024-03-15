@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InReMS</title>
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="add-details-page.css">
+    <link rel="stylesheet" href="insert-page.css">
+    <link rel="stylesheet" href="view-page.css">
+    <!-- <link href='https://unpkg.com/css.gg@2.0.0/icons/css/log-in.css' rel='stylesheet'> -->
+</head>
+
+<body>
+    <div id="app">
+        <div id="centercontent">
+            <div class="header">
+                <h1 class="headtitle1">InReMS</h1>
+                <nav>
+                    <ul>
+                        <li><a class="button1" id="to_homepage_header_homebutton" href="#">Home</a></li>
+                        <li><a class="button1" id="to_homepage_header_aboutbutton"
+                                href="#homepage-middle3-aboutus">About</a></li>
+                        <li><a class="button1" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <span>
+                    <i class="gg-log-in" id="homepage_logout_button"></i>
+                </span>
+            </div>
+
+            <div class="homepageting">
+                <div class="homepage-middle1">
+                    <div class="homepage-titleting">
+                        <h2 class="homepage-headtitle1">
+                            Empowering Educators,
+                            <br>
+                            Enlightening Students
+                        </h2>
+                        <p class="parasize">
+                            Upload Marks and Get Analysed Result in One Click!!
+                        </p>
+                        <div class="buttonting">
+                            <button id="homepage-viewresult-button" class="button2"> <span>View result</span>
+                            </button>
+                            <button id="homepage-uploadresult-button" class="button2"> <span>Upload result</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="homeimage1">
+                        <img src="homeimg3-removebg-preview.png" alt="img" height="450px" width="399px">
+                    </div>
+                </div>
+                <div class="homepage-middle2">
+                    <div id="homeimage2">
+                        <img src="homeimg4-removebg-preview.png" alt="img" height="450px" width="500px">
+                    </div>
+                    <div class="homepage-card-add-details">
+                        <div class="homepage-headtitle2">
+                            <span>Add User Details</span>
+                        </div>
+                        <div class="homepage-card-add-details-description">
+                            <p> - Add and manage user details <br> - Ensure all user profiles are up-to-date and
+                                accurate
+                            </p>
+                        </div>
+                        <button class="cta" id="homepage-card-add-details-button">
+                            <span class="hover-underline-animation">Add Details</span>
+                            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                                id="arrow-horizontal">
+                                <path transform="translate(30)"
+                                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                    data-name="Path 10" id="Path_10"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+
+
+                <div class="homepage-middle3" id="homepage-middle3-aboutus">
+                    <div class="homepage-card-aboutus">
+                        <div class="homepage-headtitle3">
+                            <span>Why choose us?</span>
+                        </div>
+                        <div class="homepage-card-aboutus-description">
+                            <p> Choosing InReMS means choosing innovation, collaboration, and progress. We stand at the
+                                intersection of technology and education, offering a platform where teachers thrive and
+                                students succeed. Discover the difference education with purpose can make.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="homeimage3">
+                        <img src="homeimg5-removebg-preview.png" alt="img" height="550px" width="450px">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="add-details-ting">
+                <div class="add-details-teacher">
+                    <div class="uni-headtitle add-details-container-headtitle">
+                        Add Teachers Details :
+                    </div>
+                    <div id="add-details-teacher-container" class="add-details-container">
+
+                        <div class="textInputWrapper">
+                            <input placeholder="Name" type="text" class="textInput" id="add-details-teacher-name-input">
+                        </div>
+                        <div class="textInputWrapper">
+                            <input placeholder="Email Id" type="email" class="textInput"
+                                id="add-details-teacher-email-input">
+                        </div>
+                        <div class="textInputWrapper">
+                            <input placeholder="Password" type="text" class="textInput"
+                                id="add-details-teacher-password-input">
+                        </div>
+                        <div class="textInputWrapper dropdown">
+                            <input placeholder="Branch" type="text" class="textInput"
+                                id="inputbox-dropdown-branch-teacher-add-detailspage" readonly>
+                            <div class="dropdown-content" id="dropdown-content-branch-teacher-add-detailspage">
+                                <ul>
+                                    <li><a href="#" class="dropdown-branch-teacher-add-detailspage"
+                                            data-branch="IT">IT</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-branch-teacher-add-detailspage"
+                                            data-branch="Comps">Comp</a></li>
+                                    <li><a href="#" class="dropdown-branch-teacher-add-detailspage"
+                                            data-branch="Mech">Mech</a></li>
+                                    <li><a href="#" class="dropdown-branch-teacher-add-detailspage"
+                                            data-branch="Extc">ExTC</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button id="add-details-teacher-container-button" class="button2 add-details-container-button">
+                            <span>Register</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="add-details-student">
+                    <div class="uni-headtitle add-details-container-headtitle">
+                        Add Student Details :
+                    </div>
+                    <div id="add-details-teacher-container" class="add-details-container">
+
+                        <div class="textInputWrapper">
+                            <input placeholder="Name" type="text" class="textInput" id="add-details-student-name-input">
+                        </div>
+                        <div class="textInputWrapper">
+                            <input placeholder="Email Id" type="email" class="textInput"
+                                id="add-details-student-email-input">
+                        </div>
+                        <div class="textInputWrapper">
+                            <input placeholder="Password" type="text" class="textInput"
+                                id="add-details-student-password-input">
+                        </div>
+                        <div class="textInputWrapper dropdown">
+                            <input placeholder="Branch" type="text" class="textInput"
+                                id="inputbox-dropdown-branch-student-add-detailspage" readonly>
+                            <div class="dropdown-content" id="dropdown-content-branch-student-add-detailspage">
+                                <ul>
+                                    <li><a href="#" class="dropdown-branch-student-add-detailspage"
+                                            data-branch="IT">IT</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-branch-student-add-detailspage"
+                                            data-branch="Comps">Comp</a></li>
+                                    <li><a href="#" class="dropdown-branch-student-add-detailspage"
+                                            data-branch="Mech">Mech</a></li>
+                                    <li><a href="#" class="dropdown-branch-student-add-detailspage"
+                                            data-branch="Extc">ExTC</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="textInputWrapper dropdown">
+                            <input placeholder="Semester" type="text" class="textInput"
+                                id="inputbox-dropdown-semester-student-add-detailspage" readonly>
+                            <div class="dropdown-content" id="dropdown-content-semester-student-add-detailspage">
+                                <ul>
+                                    <li><a href="#" class="dropdown-semester-student-add-detailspage"
+                                            data-semester="Semester 1">Semester 1</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-semester-student-add-detailspage"
+                                            data-semester="Semester 2">Semester 2</a></li>
+                                    <li><a href="#" class="dropdown-semester-student-add-detailspage"
+                                            data-semester="Semester 3">Semester 3</a></li>
+                                    <li><a href="#" class="dropdown-semester-student-add-detailspage"
+                                            data-semester="Semester 4">Semester 4</a></li>
+                                    <li><a href="#" class="dropdown-semester-student-add-detailspage"
+                                            data-semester="Semester 5">Semester 5</a></li>
+                                    <li><a href="#" class="dropdown-semester-student-add-detailspage"
+                                            data-semester="Semester 6">Semester 6</a></li>
+                                    <li><a href="#" class="dropdown-semester-student-add-detailspage"
+                                            data-semester="Semester 7">Semester 7</a></li>
+                                    <li><a href="#" class="dropdown-semester-student-add-detailspage"
+                                            data-semester="Semester 8">Semester 8</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button id="add-details-student-container-button" class="button2 add-details-container-button">
+                            <span>Register</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="insert_pagetting">
+                <div class="upperinsert_pagetting">
+                    <div class="upperinsert_pagetting_title">
+                        <span class="headtitle1_insertpage">Select branch and semeseter :</span>
+                    </div>
+                    <div class="upperinsert_pagetting_select">
+                        <div class="upperinsert_pageting_select_center">
+                            <div class="upperinsert_pageting_select_center_branch">
+                                <span class="insertpage_labels">Branch</span>
+                                <div class="textInputWrapper dropdown">
+                                    <input placeholder="Branch" type="text" class="textInput"
+                                        id="upperinsert_pageting_select_center_branch_inputbox_dropdown" readonly>
+                                    <div class="dropdown-content" id="dropdown-content-branch-insertpage">
+                                        <ul>
+                                            <li><a href="#" class="dropdown-branch-insertpage" data-branch="IT">IT</a>
+                                            </li>
+                                            <li><a href="#" class="dropdown-branch-insertpage"
+                                                    data-branch="Comps">Comp</a></li>
+                                            <li><a href="#" class="dropdown-branch-insertpage"
+                                                    data-branch="Mech">Mech</a></li>
+                                            <li><a href="#" class="dropdown-branch-insertpage"
+                                                    data-branch="Extc">ExTC</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="upperinsert_pageting_select_center_semester">
+                                <span class="insertpage_labels">Semester</span>
+                                <div class="textInputWrapper dropdown">
+                                    <input placeholder="Semester" type="text" class="textInput"
+                                        id="inputbox-dropdown-semester-insertpage" readonly>
+                                    <div class="dropdown-content" id="dropdown-content-semester-insertpage">
+                                        <ul>
+                                            <li><a href="#" class="dropdown-semester-insertpage"
+                                                    data-semester="Semester 1">Semester 1</a>
+                                            </li>
+                                            <li><a href="#" class="dropdown-semester-insertpage"
+                                                    data-semester="Semester 2">Semester 2</a></li>
+                                            <li><a href="#" class="dropdown-semester-insertpage"
+                                                    data-semester="Semester 3">Semester 3</a></li>
+                                            <li><a href="#" class="dropdown-semester-insertpage"
+                                                    data-semester="Semester 4">Semester 4</a></li>
+                                            <li><a href="#" class="dropdown-semester-insertpage"
+                                                    data-semester="Semester 5">Semester 5</a></li>
+                                            <li><a href="#" class="dropdown-semester-insertpage"
+                                                    data-semester="Semester 6">Semester 6</a></li>
+                                            <li><a href="#" class="dropdown-semester-insertpage"
+                                                    data-semester="Semester 7">Semester 7</a></li>
+                                            <li><a href="#" class="dropdown-semester-insertpage"
+                                                    data-semester="Semester 8">Semester 8</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="upperinsert-pagetting-button">
+                        <button id="upperinsert-pagetting-select-button" class="button2 insertpage_buttons_adjustment">
+                            <span>Submit</span>
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div class="lowerinsert_pagetting">
+                    <div class="lowerinsert_pagetting_title">
+                        <span class="headtitle1_insertpage">Insert marks :</span>
+                    </div>
+                    <!-- <form action="insert.php" method="post"> -->
+                    <form>
+
+                        <div class="lowerinsert_pagetting_marks_container">
+                            <div class="lowerinsert_pagetting_marks_container_left">
+                                <div class="insertpage_marks_inputboxes">
+                                    <span class="insertpage_labels" id="labellower1">Name</span>
+                                    <div class="textInputWrapper">
+                                        <input placeholder="Name" id="textinputlower1" type="text" class="textInput">
+                                    </div>
+                                </div>
+                                <div class="insertpage_marks_inputboxes">
+                                    <span class="insertpage_labels" id="labellower2">Roll no.</span>
+                                    <div class="textInputWrapper">
+                                        <input placeholder="Roll no." id="textinputlower2" type="text"
+                                            class="textInput">
+                                    </div>
+                                </div>
+                                <div class="insertpage_marks_inputboxes">
+                                    <span class="insertpage_labels" id="labellower3">Branch</span>
+                                    <div class="textInputWrapper">
+                                        <input placeholder="EnterMarks" id="textinputlower3" type="text"
+                                            class="textInput">
+                                    </div>
+                                </div>
+                                <div class="insertpage_marks_inputboxes">
+                                    <span class="insertpage_labels" id="labellower4">Branch</span>
+                                    <div class="textInputWrapper">
+                                        <input placeholder="EnterMarks" id="textinputlower4" type="text"
+                                            class="textInput">
+                                    </div>
+                                </div>
+                                <div class="insertpage_marks_inputboxes">
+                                    <span class="insertpage_labels" id="labellower5">Branch</span>
+                                    <div class="textInputWrapper">
+                                        <input placeholder="EnterMarks" id="textinputlower5" type="text"
+                                            class="textInput">
+                                    </div>
+                                </div>
+                                <div class="insertpage_marks_inputboxes">
+                                    <span class="insertpage_labels" id="labellower6">Branch</span>
+                                    <div class="textInputWrapper">
+                                        <input placeholder="EnterMarks" id="textinputlower6" type="text"
+                                            class="textInput">
+                                    </div>
+                                </div>
+                                <div class="insertpage_marks_inputboxes">
+                                    <span class="insertpage_labels" id="labellower7">Branch</span>
+                                    <div class="textInputWrapper">
+                                        <input placeholder="EnterMarks" id="textinputlower7" type="text"
+                                            class="textInput">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lowerinsert_pagetting_marks_container_right">
+                                <div class="insertpage_marks_inputboxes">
+                                    <span class="insertpage_labels" id="labellower8">Name</span>
+                                    <div class="textInputWrapper">
+                                        <input placeholder="EnterMarks" id="textinputlower8" type="text"
+                                            class="textInput">
+                                    </div>
+                                </div>
+                                <div class="insertpage_marks_inputboxes">
+                                    <span class="insertpage_labels" id="labellower9">Roll no.</span>
+                                    <div class="textInputWrapper">
+                                        <input placeholder="EnterMarks" id="textinputlower9" type="text"
+                                            class="textInput">
+                                    </div>
+                                </div>
+                                <div class="insertpage_marks_inputboxes">
+                                    <span class="insertpage_labels" id="labellower10">Branch</span>
+                                    <div class="textInputWrapper">
+                                        <input placeholder="EnterMarks" id="textinputlower10" type="text"
+                                            class="textInput">
+                                    </div>
+                                </div>
+                                <div class="insertpage_marks_inputboxes">
+                                    <span class="insertpage_labels" id="labellower11">Branch</span>
+                                    <div class="textInputWrapper">
+                                        <input placeholder="EnterMarks" id="textinputlower11" type="text"
+                                            class="textInput">
+                                    </div>
+                                </div>
+                                <div class="insertpage_marks_inputboxes">
+                                    <span class="insertpage_labels" id="labellower12">Branch</span>
+                                    <div class="textInputWrapper">
+                                        <input placeholder="EnterMarks" id="textinputlower12" type="text"
+                                            class="textInput">
+                                    </div>
+                                </div>
+                                <div class="insertpage_marks_inputboxes">
+                                    <span class="insertpage_labels" id="labellower13">Branch</span>
+                                    <div class="textInputWrapper">
+                                        <input placeholder="EnterMarks" id="textinputlower13" type="text"
+                                            class="textInput">
+                                    </div>
+                                </div>
+                                <div class="insertpage_marks_inputboxes">
+                                    <span class="insertpage_labels" id="labellower14">Branch</span>
+                                    <div class="textInputWrapper">
+                                        <input placeholder="EnterMarks" id="textinputlower14" type="text"
+                                            class="textInput">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="insertpage_marks_inputboxes">
+                            <span class="insertpage_labels" id="labellower15">inputdoc</span>
+                            <div class="textInputWrapper">
+                                <input placeholder="sax" id="textinputlower15" type="file" class="textInput">
+                            </div>
+                        </div>
+                        <div class="lowerinsert-pagetting-button">
+                            <button id="lowerinsert-pagetting-upload-button"
+                                class="button2 insertpage_buttons_adjustment">
+                                <span>Upload</span>
+                            </button>
+                            <button id="lowerinsert-pagetting-markssubmit-button"
+                                class="button2 insertpage_buttons_adjustment">
+                                <span>Submit</span>
+                            </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="view_pagetting">
+            <div class="upperview_pagetting">
+                <div class="upperview_pagetting_title">
+                    <span class="headtitle1_viewpage">Select branch and semeseter :</span>
+                </div>
+                <div class="upperview_pagetting_select">
+                    <div class="upperview_pageting_select_center">
+                        <div class="upperview_pageting_select_center_branch">
+                            <span class="viewpage_labels">Branch</span>
+                            <div class="textInputWrapper dropdown">
+                                <input placeholder="Branch" type="text" class="textInput"
+                                    id="upperview_pageting_select_center_branch_inputbox_dropdown" readonly>
+                                <div class="dropdown-content" id="dropdown-content-branch-viewpage">
+                                    <ul>
+                                        <li><a href="#" class="dropdown-branch-viewpage" data-branch="IT">IT</a>
+                                        </li>
+                                        <li><a href="#" class="dropdown-branch-viewpage" data-branch="Comps">Comp</a>
+                                        </li>
+                                        <li><a href="#" class="dropdown-branch-viewpage" data-branch="Mech">Mech</a>
+                                        </li>
+                                        <li><a href="#" class="dropdown-branch-viewpage" data-branch="Extc">ExTC</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upperview_pageting_select_center_semester">
+                            <span class="viewpage_labels">Semester</span>
+                            <div class="textInputWrapper dropdown">
+                                <input placeholder="Semester" type="text" class="textInput"
+                                    id="inputbox-dropdown-semester-viewpage" readonly>
+                                <div class="dropdown-content" id="dropdown-content-semester-viewpage">
+                                    <ul>
+                                        <li><a href="#" class="dropdown-semester-viewpage"
+                                                data-semester="Semester 1">Semester 1</a>
+                                        </li>
+                                        <li><a href="#" class="dropdown-semester-viewpage"
+                                                data-semester="Semester 2">Semester 2</a></li>
+                                        <li><a href="#" class="dropdown-semester-viewpage"
+                                                data-semester="Semester 3">Semester 3</a></li>
+                                        <li><a href="#" class="dropdown-semester-viewpage"
+                                                data-semester="Semester 4">Semester 4</a></li>
+                                        <li><a href="#" class="dropdown-semester-viewpage"
+                                                data-semester="Semester 5">Semester 5</a></li>
+                                        <li><a href="#" class="dropdown-semester-viewpage"
+                                                data-semester="Semester 6">Semester 6</a></li>
+                                        <li><a href="#" class="dropdown-semester-viewpage"
+                                                data-semester="Semester 7">Semester 7</a></li>
+                                        <li><a href="#" class="dropdown-semester-viewpage"
+                                                data-semester="Semester 8">Semester 8</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="viewpagetting_button">
+                    <div class="upperview-pagetting-button">
+                        <button id="upperview-pagetting-select-button" class="button2 viewpage_buttons_adjustment">
+                            <span>Submit</span>
+                        </button>
+                    </div>
+                    <div class="lowerview-pagetting-button">
+                        <button id="lowerview-pagetting-select-button" class="button2 viewpage_buttons_adjustment">
+                            <span>Print</span>
+                        </button>
+                    </div>
+                </div>
+                
+                
+
+            </div>
+            <div class="lowerview_pagetting">
+                <div id="table-container">
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+    </div>
+    <script src="home.js"></script>
+    <script src="add-details-page.js"></script>
+    <script src="insert-page.js"></script>
+    <script src="view-page.js"></script>
+    <script src="Choosingbranchandsem.js"></script>
+    <script src="table.js"></script>
+
+    <script type="module" src="firebase_upload.js"></script>
+    <script src="firebase_adddetails.js" type="module"></script>
+    <script src="print.js"></script>
+</body>
+
+</html>

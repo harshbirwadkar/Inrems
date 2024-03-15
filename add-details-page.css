@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu:wght@500&display=swap');
+
+:root {
+    --bg-color: #fff;
+    --main-color: #080909;
+    --caret-color: #537997;
+    --sub-color: #4d6f8b;
+    --sub-alt-color: #f2f0e9;
+    --sub-alt-color2: #99947f;
+    --text-color: #080909;
+    --error-color: #c87e74;
+    --colorful-error-color: #a56961;
+    --colorful-error-color: #c87e74;
+    --hello-color: #c3af5b;
+    --font1: 'Roboto Mono', monospace;
+    --font2: 'Ubuntu', sans-serif;
+}
+
+.add-details-ting{
+    /* display: flex; */
+    display: none;
+    flex-direction: row;
+}
+.add-details-teacher{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.add-details-student{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.add-details-container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 2rem 3rem 2rem 2rem;
+}
+.add-details-container-headtitle{
+    padding: 1rem 2rem 1rem;
+}
+.add-details-container-button{
+    margin: 2rem 3rem 2rem;
+}
+
+
+.textInput::placeholder {
+    transition: opacity 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    opacity: 1;
+    user-select: none;
+    color: var(--sub-alt-color2);
+    font-family: var(--font1);
+  }
+  
+  .textInputWrapper .textInput {
+    border-radius: 15px;
+    /* box-shadow: 0px 2px 5px rgb(35 35 35 / 30%); */
+    max-height: 45px;
+    background-color: var(--sub-alt-color);
+    /* transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 200ms;
+    transition-property: background-color; */
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px;
+    width: 21vw;
+    border: none;
+    font-family: var(--font1);
+  }
+  .textInputWrapper{
+    padding: 0.8rem;
+    font-family: var(--font1);
+  }
+  .textInputWrapper .textInput:focus,
+  .textInputWrapper .textInput:active {
+    outline: none;
+  }
+  
+  /* .textInputWrapper:focus-within .textInput,
+  .textInputWrapper .textInput:focus,
+  .textInputWrapper .textInput:active {
+    background-color: var(--sub-alt-color);
+  } */
+  
+  .textInputWrapper:focus-within .textInput::placeholder {
+    opacity: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 15px;
+    background-color: var(--sub-alt-color);
+    min-width: 160px;
+    width: 21vw;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 2;
+  }
+  
+  .dropdown-content a {
+    color: var(--main-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: var(--font1);
+  }
+  
+  .dropdown-content a:hover {background-color: var(--bg-color);color: var(--sub-color);}
+  
+  .dropdown:hover .dropdown-content, .dropdown:focus-within .dropdown-content {display: block;}
+  
+
+  .dropdown-content ul li {
+    list-style: none;
+}
+
+.dropdown-content ul {
+    display: flex;
+    flex-direction: column;
+}

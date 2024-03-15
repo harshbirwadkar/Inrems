@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu:wght@500&display=swap');
+
+:root {
+    --bg-color: #fff;
+    --main-color: #080909;
+    --caret-color: #537997;
+    --sub-color: #4d6f8b;
+    --sub-alt-color: #f2f0e9;
+    --sub-alt-color2: #99947f;
+    --text-color: #080909;
+    --error-color: #c87e74;
+    --colorful-error-color: #a56961;
+    --colorful-error-color: #c87e74;
+    --hello-color: #c3af5b;
+    --font1: 'Roboto Mono', monospace;
+    --font2: 'Ubuntu', sans-serif;
+}
+.viewpage_labels{
+    margin: 0 15px;
+    font-family: var(--font1);
+    font-size: 1rem;
+}
+
+.view_pagetting {
+    width: 100%;
+    height: 82vh;
+    display: none;
+    flex-direction: column;
+}
+.upperview_pagetting {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+}
+.headtitle1_viewpage {
+    font-size: 2rem;
+    font-family: var(--font1);
+    margin: 0px 20px;
+}
+.upperview_pagetting_select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.upperview_pageting_select_center{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-between;
+}
+.viewpagetting_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    height: 10vh
+}
+/* .upperview-pagetting-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    height: 10vh;
+} */
+.lowerview-pagetting-button{
+    display: none;
+}
+
+.viewpage_buttons_adjustment{
+    height: 40px;
+    padding: 5px 25px;
+}
+#table-container{
+    margin: 50px 20px;
+}
+#table-container table th{
+    padding: 12px;
+    text-align: center;
+}
+#table-container table td {
+    text-align: center;
+  }
+#table-container table, th, td {
+    border: 1px solid black;
+  }
+#table-container table{
+    width: 100%;
+}

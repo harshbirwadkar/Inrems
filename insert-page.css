@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu:wght@500&display=swap');
+
+:root {
+    --bg-color: #fff;
+    --main-color: #080909;
+    --caret-color: #537997;
+    --sub-color: #4d6f8b;
+    --sub-alt-color: #f2f0e9;
+    --sub-alt-color2: #99947f;
+    --text-color: #080909;
+    --error-color: #c87e74;
+    --colorful-error-color: #a56961;
+    --colorful-error-color: #c87e74;
+    --hello-color: #c3af5b;
+    --font1: 'Roboto Mono', monospace;
+    --font2: 'Ubuntu', sans-serif;
+}
+.insertpage_labels{
+    margin: 0 15px;
+    font-family: var(--font1);
+    font-size: 1rem;
+}
+
+.insert_pagetting {
+    width: 100%;
+    height: 82vh;
+    display: none;
+    flex-direction: column;
+}
+.upperinsert_pagetting {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+}
+.headtitle1_insertpage {
+    font-size: 2rem;
+    font-family: var(--font1);
+    margin: 0px 20px;
+}
+.upperinsert_pagetting_select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.upperinsert_pageting_select_center{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-between;
+}
+.upperinsert-pagetting-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    height: 10vh;
+}
+
+.insertpage_buttons_adjustment{
+    height: 40px;
+    padding: 5px 25px;
+}
+
+.lowerinsert_pagetting{
+    display: flex;
+    flex-direction: column;
+
+}
+.lowerinsert_pagetting_marks_container{
+    display: flex;
+    flex-direction: row;
+    margin: 35px 20px;
+}
+.lowerinsert_pagetting_marks_container_left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.lowerinsert_pagetting_marks_container_right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.insertpage_marks_inputboxes{
+    margin: 0 50px 18px;
+}
+.lowerinsert-pagetting-button{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 0;
+    height: 10vh;
+}
